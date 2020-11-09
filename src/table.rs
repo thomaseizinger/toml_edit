@@ -186,6 +186,11 @@ impl Table {
     pub fn set_implicit(&mut self, implicit: bool) {
         self.implicit = implicit;
     }
+
+    /// Clear the decoration of this table.
+    pub fn clear_decor(&mut self) {
+        self.decor = Decor::default()
+    }
 }
 
 impl Item {
